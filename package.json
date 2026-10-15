@@ -1,0 +1,22 @@
+{
+  "name": "xtra-construction-ui-recreation",
+  "version": "1.0.0",
+  "description": "Pixel-perfect recreation of the XTRA Construction 2 website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "build": "echo 'Static production ready'"
+  },
+  "keywords": [
+    "ui-development",
+    "construction-theme",
+    "pixel-perfect",
+    "responsive-design",
+    "html5",
+    "css3",
+    "javascript"
+  ],
+  "author": "Candidate",
+  "license": "MIT"
+}

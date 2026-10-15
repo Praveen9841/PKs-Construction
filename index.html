@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PK's CONSTRUCTION – Building and Maintenance</title>
+  <meta name="description"
+    content="Professional construction services including building engineering, road construction, and maintenance. Trusted by leading developers worldwide.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Google Fonts: Roboto & Roboto Slab -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Slab:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left">
+        <span class="top-info-item">
+          <i class="fa-solid fa-phone"></i>
+          Have any questions? call us
+          <a href="tel:+18182345678">+91 9192939495</a>
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header" id="mainHeader">
+    <div class="container header-container">
+      <div class="site-logo">
+        <a href="#hero">
+          <img src="assets/images/logos/logo-main.svg" alt="PK's Construction Logo" class="logo-img">
+        </a>
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i></a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#process" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Pages</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-trigger-btn" id="searchTrigger" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="#contact" class="btn btn-gold header-quote-btn">Free Consultation</a>
+        <button class="mobile-toggle-btn" id="mobileMenuToggle" aria-label="Open mobile menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/images/logos/logo-main.svg" alt="PK's Construction Logo" class="drawer-logo">
+      <button class="drawer-close-btn" id="drawerClose" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="drawer-nav-list">
+      <li><a href="#hero" class="drawer-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about" class="drawer-link">About</a></li>
+      <li><a href="#services" class="drawer-link">Services</a></li>
+      <li><a href="#process" class="drawer-link">FAQ</a></li>
+      <li><a href="#projects" class="drawer-link">Blog</a></li>
+      <li><a href="#testimonials" class="drawer-link">Pages</a></li>
+      <li><a href="#contact" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="#contact" class="btn btn-gold btn-block">Free Consultation</a>
+      <div class="drawer-contact-info">
+        <p><i class="fa-solid fa-phone"></i> +91 9192939495</p>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content-wrapper">
+        <div class="hero-badge">
+          <i class="fa-solid fa-helmet-safety"></i>
+          <span>TRUSTED CONSTRUCTION</span>
+        </div>
+        <h1 class="hero-title">Don't get framed by the competition, trust our solid reputation.</h1>
+        <p class="hero-subtitle">Slogan creation for your construction company is crucial for the overall branding. And
+          branding in today's world can't be ignored.</p>
+
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-gold btn-lg">Free Consultation</a>
+          <button class="btn btn-outline-white btn-lg video-modal-trigger" id="openVideoModal">
+            <i class="fa-solid fa-play"></i> Read More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FLOATING 3D FLIP FEATURE CARDS ================= -->
+    <section class="feature-cards-section">
+      <div class="container">
+        <div class="feature-cards-grid">
+
+          <!-- Card 1: Building Engineering -->
+          <div class="flip-card-item">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="background-image: url('assets/images/services/service-bg-1.jpg');">
+                <div class="front-overlay"></div>
+                <div class="front-content">
+                  <div class="front-icon"><i class="fa-solid fa-building"></i></div>
+                  <h3 class="front-title">Building Engineering</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h3 class="back-title">Building Engineering</h3>
+                <p class="back-text">A building, or edifice, is a structure with a roof and walls standing permanently
+                  in one place, such as a house or factory.</p>
+                <a href="#contact" class="btn btn-navy back-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Safety First -->
+          <div class="flip-card-item">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="background-image: url('assets/images/services/service-bg-2.jpg');">
+                <div class="front-overlay"></div>
+                <div class="front-content">
+                  <div class="front-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                  <h3 class="front-title">Safety First</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h3 class="back-title">Safety First</h3>
+                <p class="back-text">Safety is our top priority. We implement comprehensive hazard mitigation and
+                  rigorous safety protocols across all project sites to protect every worker.</p>
+                <a href="#contact" class="btn btn-navy back-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Road Construction -->
+          <div class="flip-card-item">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="background-image: url('assets/images/services/service-bg-3.jpg');">
+                <div class="front-overlay"></div>
+                <div class="front-content">
+                  <div class="front-icon"><i class="fa-solid fa-road"></i></div>
+                  <h3 class="front-title">Road Construction</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h3 class="back-title">Road Construction</h3>
+                <p class="back-text">Road construction involves the use of asphalt, liquid asphalt, concrete, soil
+                  stabilization, rebar, paving and pavement recycling machines, and other road repair materials.</p>
+                <a href="#contact" class="btn btn-navy back-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Left: About Text & Features -->
+          <div class="about-content">
+            <div class="section-badge-wrapper">
+              <span class="watermark-text">ABOUT OUR COMPANY</span>
+              <span class="section-sub-badge">ABOUT OUR COMPANY</span>
+            </div>
+            <h2 class="section-heading">Always dedicated and devoted</h2>
+            <p class="about-lead">Slogan creation for your construction company is crucial for the overall branding. And
+              branding in today's world can't be ignored.</p>
+            <p class="about-body">We hope that the above Construction Slogans will help you. Don't forget to share it on
+              social media and related building communities.</p>
+
+            <ul class="stylish-feature-list">
+              <li><i class="fa-solid fa-check"></i> Excellent engineering</li>
+              <li><i class="fa-solid fa-check"></i> Modern &amp; up to date</li>
+              <li><i class="fa-solid fa-check"></i> Grade #1 materials</li>
+              <li><i class="fa-solid fa-check"></i> Structures with long life</li>
+            </ul>
+
+            <div class="about-cta-box">
+              <a href="#contact" class="btn btn-gold">Read More</a>
+            </div>
+          </div>
+
+          <!-- Right: Offset Framed Image -->
+          <div class="about-media">
+            <div class="image-frame-gold-backdrop">
+              <img src="assets/images/about/about-company.jpg" alt="PK's Construction Team" class="about-img">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header-centered">
+          <div class="section-badge-wrapper centered">
+            <span class="watermark-text">WHAT WE CAN DO FOR YOU</span>
+            <span class="section-sub-badge">WHAT WE CAN DO FOR YOU</span>
+          </div>
+          <h2 class="section-heading">Our construction services</h2>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Service Card 1 -->
+          <div class="service-box">
+            <div class="service-img-wrap">
+              <img src="assets/images/icons/service-icon-1.png" alt="Building Engineering" class="service-icon-img">
+            </div>
+            <h3 class="service-title">Building Engineering</h3>
+            <p class="service-desc">Ground-up construction of modern corporate towers, retail complexes, and logistics
+              hubs engineered with superior thermal and seismic resilience.</p>
+            <a href="#contact" class="btn service-btn">Read More</a>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-box">
+            <div class="service-img-wrap">
+              <img src="assets/images/icons/service-icon-2.png" alt="Road Construction" class="service-icon-img">
+            </div>
+            <h3 class="service-title">Road Construction</h3>
+            <p class="service-desc">Precision laser grading, heavy asphalt surfacing, reinforced subgrade compaction,
+              and multi-lane expressway construction built for decades of peak traffic.</p>
+            <a href="#contact" class="btn service-btn">Read More</a>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-box">
+            <div class="service-img-wrap">
+              <img src="assets/images/icons/service-icon-3.png" alt="Maintenance / Restoration"
+                class="service-icon-img">
+            </div>
+            <h3 class="service-title">Maintenance / Restoration</h3>
+            <p class="service-desc">Preventative structural maintenance, seismic retrofits, exterior envelope
+              rejuvenation, and proactive mechanical upgrades for long-term facility preservation.</p>
+            <a href="#contact" class="btn service-btn">Read More</a>
+          </div>
+
+        </div>
+
+        <!-- Callout Banner -->
+        <div class="services-callout-banner">
+          <div class="callout-text-wrap">
+            <i class="fa-solid fa-trophy callout-icon"></i>
+            <h3 class="callout-title">Have a question or need a custom quote? We're happy to help you.</h3>
+          </div>
+          <a href="#contact" class="btn btn-white callout-btn">Free Consultation</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS IN CONSTRUCTION (PROCESS) ================= -->
+    <section class="process-section" id="process">
+      <div class="container">
+        <div class="process-grid">
+
+          <!-- Left: Process Image -->
+          <div class="process-media">
+            <div class="process-img-backdrop">
+              <img src="assets/images/process/process-main.jpg" alt="Construction Process" class="process-img">
+            </div>
+          </div>
+
+          <!-- Right: Process Steps -->
+          <div class="process-content">
+            <div class="section-badge-wrapper">
+              <span class="watermark-text">HOW IT WORKS</span>
+              <span class="section-sub-badge">HOW IT WORKS</span>
+            </div>
+            <h2 class="section-heading">How it works in construction?</h2>
+            <p class="about-body">Slogan creation for your construction company is crucial for the overall branding.</p>
+
+            <div class="process-steps-list">
+
+              <!-- Step 01 -->
+              <div class="process-step-item">
+                <div class="step-num-badge">01</div>
+                <div class="step-info">
+                  <h3 class="step-title">Agency / Bidding</h3>
+                  <p class="step-desc">Ensure design documents are reviewed and permitted by the local authorities
+                    before the bidding process begins.</p>
+                </div>
+              </div>
+
+              <!-- Step 02 -->
+              <div class="process-step-item">
+                <div class="step-num-badge">02</div>
+                <div class="step-info">
+                  <h3 class="step-title">Construction</h3>
+                  <p class="step-desc">Helps to coordinate furnishings, equipment delivery, and move-in process with all
+                    key stakeholders and subcontractors.</p>
+                </div>
+              </div>
+
+              <!-- Step 03 -->
+              <div class="process-step-item">
+                <div class="step-num-badge">03</div>
+                <div class="step-info">
+                  <h3 class="step-title">Project Execution</h3>
+                  <p class="step-desc">Client directs move in of equipment, operations &amp; staff. The contractor
+                    completes punch list items and final inspections.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WE ARE PROFESSIONAL (PORTFOLIO GALLERY) ================= -->
+    <section class="portfolio-section" id="projects">
+      <div class="container">
+        <div class="section-header-centered">
+          <div class="section-badge-wrapper centered">
+            <span class="watermark-text">WE ARE PROFESSIONAL</span>
+            <span class="section-sub-badge">WE ARE PROFESSIONAL</span>
+          </div>
+          <h2 class="section-heading">Our latest projects</h2>
+
+          <!-- Filter Navigation Tabs -->
+          <div class="portfolio-filter-tabs">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="commercial">Buildings</button>
+            <button class="filter-btn" data-filter="structural">Roads</button>
+            <button class="filter-btn" data-filter="restoration">Restoration</button>
+            <button class="filter-btn" data-filter="civic">Civil</button>
+          </div>
+        </div>
+
+        <!-- Project Grid (8 Cards) -->
+        <div class="portfolio-grid" id="portfolioGrid">
+
+          <div class="portfolio-card" data-category="commercial">
+            <div class="portfolio-thumb-wrap">
+              <img src="assets/images/portfolio/project-1.jpg" alt="Commercial Tower Project" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <div class="overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                  <h3 class="overlay-title">Commercial Tower</h3>
+                  <span class="overlay-category">Buildings / High-Rise</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="commercial">
+            <div class="portfolio-thumb-wrap">
+              <img src="assets/images/portfolio/project-2.jpg" alt="Hotel Construction Project" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <div class="overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                  <h3 class="overlay-title">Hotel &amp; Resort Build</h3>
+                  <span class="overlay-category">Buildings / Hospitality</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="restoration">
+            <div class="portfolio-thumb-wrap">
+              <img src="assets/images/portfolio/project-3.jpg" alt="Heritage Building Restoration"
+                class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <div class="overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                  <h3 class="overlay-title">Heritage Restoration</h3>
+                  <span class="overlay-category">Restoration / Classical</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="civic">
+            <div class="portfolio-thumb-wrap">
+              <img src="assets/images/portfolio/project-4.jpg" alt="Boulevard Road Expansion" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <div class="overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                  <h3 class="overlay-title">Boulevard Road Expansion</h3>
+                  <span class="overlay-category">Civil / Municipal Road</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="structural">
+            <div class="portfolio-thumb-wrap">
+              <img src="assets/images/portfolio/project-5.jpg" alt="Interior Fitout Project" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <div class="overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                  <h3 class="overlay-title">Interior Fitout</h3>
+                  <span class="overlay-category">Roads / Structural</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="structural">
+            <div class="portfolio-thumb-wrap">
+              <img src="assets/images/portfolio/project-6.jpg" alt="Eco Residence Build" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <div class="overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                  <h3 class="overlay-title">Eco Living Residence</h3>
+                  <span class="overlay-category">Roads / Residential</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="commercial">
+            <div class="portfolio-thumb-wrap">
+              <img src="assets/images/portfolio/project-7.jpg" alt="Innovation Pavilion" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <div class="overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                  <h3 class="overlay-title">Innovation Pavilion</h3>
+                  <span class="overlay-category">Buildings / Eco-Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="restoration">
+            <div class="portfolio-thumb-wrap">
+              <img src="assets/images/portfolio/project-8.jpg" alt="Penthouse Renovation" class="portfolio-img">
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <div class="overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                  <h3 class="overlay-title">Penthouse Renovation</h3>
+                  <span class="overlay-category">Restoration / Architectural</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INTERESTED IN CONSTRUCTION (QUOTE FORM) ================= -->
+    <section class="quote-section" id="contact">
+      <div class="container">
+        <div class="quote-grid">
+
+          <!-- Left: Information Column -->
+          <div class="quote-info-col">
+            <div class="section-badge-wrapper">
+              <span class="watermark-text">INTERESTED IN CONSTRUCTION?</span>
+              <span class="section-sub-badge">INTERESTED IN CONSTRUCTION?</span>
+            </div>
+            <h2 class="section-heading text-white">fair quote</h2>
+            <p class="quote-lead">Slogan creation for your construction company is crucial for the overall branding. And
+              branding in today's world can't be ignored, We hope that the above Construction Slogans. Don't forget to
+              share it on social media.</p>
+
+            <div class="quote-contact-details">
+              <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4 class="contact-card-title">Our Address</h4>
+                  <p class="contact-card-text">1200 Construction Ave, Suite 500, Los Angeles, CA 90001</p>
+                </div>
+              </div>
+
+              <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h4 class="contact-card-title">Call Us</h4>
+                  <p class="contact-card-text">+91 919239495 </p>
+                </div>
+              </div>
+
+              <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4 class="contact-card-title">Email Us</h4>
+                  <p class="contact-card-text">info@pksconstruction.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Gold Form Card -->
+          <div class="quote-form-col">
+            <div class="quote-form-card">
+              <h3 class="form-card-title">Get A Free Quote</h3>
+              <p class="form-card-subtitle">Fill in the form below and we'll get back to you:</p>
+
+              <form id="quoteForm" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="fullName">Your Name (required)</label>
+                    <input type="text" id="fullName" class="form-control" placeholder="Your full name" required>
+                    <span class="error-msg" id="nameError">Please provide your full name</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="emailAddr">Your Email (required)</label>
+                    <input type="email" id="emailAddr" class="form-control" placeholder="Your email address" required>
+                    <span class="error-msg" id="emailError">Please enter a valid email address</span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="phoneNum">Your Phone</label>
+                    <input type="tel" id="phoneNum" class="form-control" placeholder="+1 (555) 000-0000" required>
+                    <span class="error-msg" id="phoneError">Please provide a valid phone number</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="serviceType">Department</label>
+                    <select id="serviceType" class="form-control">
+                      <option value="building">Building Engineering</option>
+                      <option value="road">Road Construction</option>
+                      <option value="maintenance">Maintenance / Restoration</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectDetails">Your Message *</label>
+                  <textarea id="projectDetails" class="form-control" rows="4"
+                    placeholder="Describe your project requirements..." required></textarea>
+                  <span class="error-msg" id="detailsError">Please describe your project</span>
+                </div>
+
+                <button type="submit" class="btn btn-navy btn-submit" id="submitQuoteBtn">
+                  <span>SEND</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div class="form-toast" id="formToast">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Thank you! Your message has been sent. We will contact you shortly.</span>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS SLIDER ================= -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header-centered">
+          <div class="section-badge-wrapper centered">
+            <span class="watermark-text">SEE WHAT SAYS OUR HAPPY CLIENTS</span>
+            <span class="section-sub-badge">SEE WHAT SAYS OUR HAPPY CLIENTS</span>
+          </div>
+          <h2 class="section-heading">What our clients say</h2>
+        </div>
+
+        <div class="testimonials-slider-container">
+          <div class="testimonials-track" id="testimonialTrack">
+
+            <!-- Slide 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial-avatar-wrap">
+                <img src="assets/images/testimonials/client-1.jpg" alt="Richard Dowson" class="testimonial-avatar">
+              </div>
+              <div class="testimonial-content">
+                <div class="quote-mark-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">"Great Experience!! Michael has made the whole process easy from the
+                  planning stage to the final plant going in. Steve &amp; his crew did a great job. I felt like the team
+                  really listened to what I wanted, gave me ideas, and helped me decide how to make this project a place
+                  to relax and enjoy."</p>
+                <div class="testimonial-meta">
+                  <h4 class="client-name">Richard Dowson</h4>
+                  <span class="client-role">Project Manager, Lavish Gardens Group</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial-avatar-wrap">
+                <img src="assets/images/testimonials/client-2.jpg" alt="Sarah Mitchell" class="testimonial-avatar">
+              </div>
+              <div class="testimonial-content">
+                <div class="quote-mark-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">"Their civil engineering division expanded our regional interchange six
+                  weeks ahead of deadline. Commuters experienced minimal disruption, and the construction quality is
+                  immaculate. Highly recommend PK's Construction for any large-scale project."</p>
+                <div class="testimonial-meta">
+                  <h4 class="client-name">Sarah Mitchell</h4>
+                  <span class="client-role">Director of Public Works, Regional Authority</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-avatar-wrap">
+                <img src="assets/images/testimonials/client-3.jpg" alt="James Patterson" class="testimonial-avatar">
+              </div>
+              <div class="testimonial-content">
+                <div class="quote-mark-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">"Managing historic restorations requires surgical delicacy and structural
+                  creativity. PK's Construction preserved our building's historic facade while introducing
+                  state-of-the-art structural reinforcement. A truly professional and dedicated team."</p>
+                <div class="testimonial-meta">
+                  <h4 class="client-name">James Patterson</h4>
+                  <span class="client-role">Managing Partner, Heritage Architecture &amp; Design</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-arrow prev" id="sliderPrev" aria-label="Previous testimonial"><i
+                class="fa-solid fa-chevron-left"></i></button>
+            <div class="slider-dots" id="sliderDots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+            <button class="slider-arrow next" id="sliderNext" aria-label="Next testimonial"><i
+                class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CLIENT LOGO SHOWCASE ================= -->
+    <section class="partners-section">
+      <div class="container">
+        <div class="partners-grid">
+          <div class="partner-logo-item"><img src="assets/images/logos/partner-1.png" alt="Partner 1"></div>
+          <div class="partner-logo-item"><img src="assets/images/logos/partner-2.png" alt="Partner 2"></div>
+          <div class="partner-logo-item"><img src="assets/images/logos/partner-3.png" alt="Partner 3"></div>
+          <div class="partner-logo-item"><img src="assets/images/logos/partner-4.png" alt="Partner 4"></div>
+          <div class="partner-logo-item"><img src="assets/images/logos/partner-5.png" alt="Partner 5"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="main-footer">
+    <div class="container footer-top-grid">
+
+      <!-- Footer Col 1: About & Logo -->
+      <div class="footer-col">
+        <img src="assets/images/logos/logo-footer.svg" alt="PK's Construction Footer Logo" class="footer-logo">
+        <p class="footer-bio">A company is any entity that engages in business. Companies can be structured in different
+          ways. For example, your company can be a sole proprietorship, a partnership, or a corporation.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Footer Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Our Services</a></li>
+          <li><a href="#process"><i class="fa-solid fa-angle-right"></i> How It Works</a></li>
+          <li><a href="#projects"><i class="fa-solid fa-angle-right"></i> Our Projects</a></li>
+          <li><a href="#testimonials"><i class="fa-solid fa-angle-right"></i> Testimonials</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3: Services -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Building Engineering</a></li>
+          <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Road Construction</a></li>
+          <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Maintenance / Restoration</a></li>
+          <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Pre-Construction Planning</a></li>
+          <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Safety Management</a></li>
+          <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Civil Engineering</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 4: Newsletter & Contact -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Newsletter</h4>
+        <p class="footer-news-text">Subscribe for construction industry updates, project insights, and company news.</p>
+        <form class="footer-newsletter-form" id="newsletterForm"
+          onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+          <div class="newsletter-input-group">
+            <input type="email" placeholder="Your email address" required class="newsletter-input">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i
+                class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </form>
+        <div class="footer-hotline">
+          <i class="fa-solid fa-phone-volume hotline-icon"></i>
+          <div>
+            <span class="hotline-sub">CALL US ANYTIME</span>
+            <strong class="hotline-num">+91 9192939495 </strong>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright Sub-bar -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">© 2026 PK's CONSTRUCTION. All Rights Reserved.</p>
+        <ul class="bottom-legal-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SEARCH MODAL POPUP ================= -->
+  <div class="modal-overlay" id="searchModal">
+    <div class="search-modal-box">
+      <button class="modal-close-btn" id="closeSearchModal" aria-label="Close search"><i
+          class="fa-solid fa-xmark"></i></button>
+      <h3 class="search-modal-title">Search</h3>
+      <form class="search-modal-form"
+        onsubmit="event.preventDefault(); alert('Searching for: ' + document.getElementById('siteSearchInput').value);">
+        <input type="text" id="siteSearchInput" class="search-modal-input" placeholder="Type to search..." autofocus>
+        <button type="submit" class="btn btn-gold"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= VIDEO MODAL ================= -->
+  <div class="modal-overlay" id="videoModal">
+    <div class="video-modal-box">
+      <button class="modal-close-btn" id="closeVideoModal" aria-label="Close video"><i
+          class="fa-solid fa-xmark"></i></button>
+
+      <div class="video-modal-header">
+        <h3 class="video-modal-title"><i class="fa-solid fa-film"></i> PK's Construction Overview</h3>
+        <a href="https://www.youtube.com/watch?v=TPyXCFmG2Ws" target="_blank" rel="noopener noreferrer"
+          class="btn btn-sm btn-gold youtube-direct-btn">
+          <i class="fa-brands fa-youtube"></i> Open on YouTube
+        </a>
+      </div>
+
+      <div class="responsive-video-wrap" id="videoWrapper">
+        <iframe id="videoIframe" width="100%" height="450" src="https://www.youtube.com/embed/TPyXCFmG2Ws"
+          title="PK's Construction Overview" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video id="html5Video" width="100%" height="450" controls style="display: none;">
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+            type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+
+      <div class="video-modal-footer">
+        <div class="video-mode-toggles">
+          <button type="button" class="video-toggle-btn active" id="toggleYoutubeBtn"><i
+              class="fa-brands fa-youtube"></i> YouTube Player</button>
+          <button type="button" class="video-toggle-btn" id="toggleHtml5Btn"><i class="fa-solid fa-play"></i> Direct
+            Video Player</button>
+        </div>
+        <p class="video-local-hint" id="fileProtocolNotice" style="display: none;">
+          <i class="fa-solid fa-circle-info"></i> <strong>Local File Notice:</strong> YouTube blocks embedded iframes on
+          local <code>file:///</code> paths with "Error 153". You can watch seamlessly using the <strong>Direct Video
+            Player</strong> tab above, or click <strong>Open on YouTube</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll To Top Button -->
+  <button class="back-to-top-btn" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Script Files -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
