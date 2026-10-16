@@ -1,147 +1,134 @@
-# PK's CONSTRUCTION – Building and Maintenance Web UI
+PK's CONSTRUCTION
 
 A pixel-perfect, fully responsive, and interactive UI recreation of the reference website:  
-🔗 **Reference Website**: [https://xtratheme.com/elementor/construction-2/](https://xtratheme.com/elementor/construction-2/)
+Reference Website: [https://xtratheme.com/elementor/construction-2/](https://xtratheme.com/elementor/construction-2/)
 
----
+Deliverable Links
+GitHub Repository: [https://github.com/your-username/pks-construction-ui](https://github.com/your-username/pks-construction-ui)
 
-## 📌 Deliverable Links
-- **Live Demo**: [https://pks-construction-ui.vercel.app](https://pks-construction-ui.vercel.app) *(or deploy to your preferred URL)*
-- **GitHub Repository**: [https://github.com/your-username/pks-construction-ui](https://github.com/your-username/pks-construction-ui)
+A simple, responsive website for a construction company, developed for PK's Construction Company. The website is intended to present the company's services and information in an organized way and help visitors learn more about the business.
 
----
+1. Project Overview
 
-## 📖 Project Overview
-This project recreates the entire homepage of the **XTRA Construction-2** reference website down to every detail:
-- **Exact Layout & Hierarchy**:
-  - **Top Bar**: Contact phone `+1 (818) 23 45 678` and social media icons (Facebook, Twitter, LinkedIn, Instagram).
-  - **Main Navigation Header**: Official **PK's CONSTRUCTION** brand logo, navigation links (`Home`, `About`, `Services`, `FAQ`, `Blog`, `Pages`, `Contact`), interactive search modal trigger, and `FREE CONSULTATION` CTA button.
-  - **Hero Section**: High-impact background, `TRUSTED CONSTRUCTION` badge, headline *"Don't get framed by the competition, trust our solid reputation."*, slogan copy, and action buttons with video modal popup.
-  - **Floating 3D Flip Cards**: 3 interactive 3D flip cards (`Building Engineering`, `Safety First`, `Road Construction`) with smooth 180° perspective flip revealing descriptions and "Read More" buttons.
-  - **About Our Company**: Section watermark badge, heading *"Always dedicated and devoted"*, feature checklist with icons, gold frame photo arrangement, and CTA.
-  - **Services Section**: Section badge, *"Our construction services"*, 3 service feature cards with hover transitions and yellow border accents, followed by the gold callout banner.
-  - **How It Works (Process)**: 3-step numbered roadmap (`01 Agency / Bidding`, `02 Construction`, `03 Project Execution`) with framed construction imagery.
-  - **Portfolio Showcase**: Interactive filter tabs (`All`, `Buildings`, `Roads`, `Restoration`, `Civil`) filtering 8 project cards with hover zoom and search overlay.
-  - **Get A Fair Quote (Contact Section)**: Dual-column layout with dark info block (address, phone, email) and gold quotation form featuring client-side JavaScript validation.
-  - **Testimonial Slider**: Client review carousel with custom avatars, gold shadow offsets, previous/next controls, and indicator dots.
-  - **Partners Strip**: Client/partner logos showcase.
-  - **Footer**: 4-column dark footer with company bio, quick links, service catalog, newsletter subscription form, 24/7 hotline callout, and copyright bar.
+The PK's Construction Company Website is a website development project created to demonstrate the design and development of a business website. It provides a place to display construction company related information, details and services.
 
----
+Objectives
 
-## 📁 Project Directory Structure
+Create a clear and user-friendly website for PK’s construction company.
+Organize company and service information into a website interface.
+Apply HTML for page structure, CSS for styling, and JavaScript for client-side interactions where required and practise fundamental web development skills and version control using Git and GitHub. And use this website as a reference to create this website.
+Link: https://xtratheme.com/elementor/construction-2/\
 
-```text
-construction-ui/
-├── index.html                   # Main entry point with complete HTML5 semantic structure
-├── vercel.json                  # Deployment configuration for Vercel
-├── package.json                 # Optional npm scripts for development & serving
-├── README.md                    # Comprehensive documentation and student guide
-│
-├── css/
-│   ├── style.css                # Core design system tokens, typography, layouts & animations
-│   └── responsive.css           # Breakpoints for desktop, laptop, tablet, and mobile (no horizontal scroll)
-│
-├── js/
-│   └── main.js                  # Modular vanilla JavaScript handling all interactive components
-│
-└── assets/
-    └── images/
-        ├── logos/               # Company logos (logo-main.svg, logo-footer.svg, partner logos)
-        ├── hero/                # High-resolution hero background image
-        ├── about/               # About section photo
-        ├── services/            # Service background images for flip cards
-        ├── icons/               # High-contrast service and safety icons
-        ├── process/             # Process section image
-        ├── portfolio/           # 8 categorized project images
-        └── testimonials/        # Client avatar photos
-```
+Main Features
 
----
+Update this list to match the features that are actually implemented in my project.
+Company landing page
+Construction services and project information,
+Navigation between website sections,
+Responsive layout for different screen sizes,
+Contact information.
+2. Technologies Used
 
-## 🎓 Step-by-Step Guidance (MCA / Developer Walkthrough)
+The following technologies are used for in this project:
 
-### 1. Architectural Approach
-The codebase is structured following modern frontend engineering principles without bloated external frameworks:
-- **Separation of Concerns**: HTML handles the semantic structure, CSS handles visual presentation and responsiveness, and vanilla JavaScript handles all dynamic interactions.
-- **CSS Custom Properties (Variables)**: Defined in `:root` inside `css/style.css` for consistent theme management:
-  - `--primary-gold: #f4c03b;`
-  - `--dark-navy: #243344;`
-  - `--dark-navy-deep: #1b2633;`
-  - `--font-primary: 'Roboto', sans-serif;`
+HTML - structures the website content.
+CSS - styles the layout, colors, typography, and responsive design.
+JavaScript - adds client-side interactions, if used.
+Visual Studio Code – as a code editor.
+Git and GitHub - source-code version control and repository hosting.
 
-### 2. Key Interactive Features Implemented
-1. **3D CSS Card Flip**: Uses `perspective: 1200px` on the container, `transform-style: preserve-3d` on the inner card, and `rotateY(180deg)` on hover with `-webkit-backface-visibility: hidden`.
-2. **Dynamic Portfolio Filter**: JavaScript listens for clicks on filter tabs (`All`, `Buildings`, `Roads`, `Restoration`, `Civil`), queries `data-category` attributes on each card, and applies smooth fade animations.
-3. **Responsive Navigation Drawer**: On screens `<= 992px`, the desktop menu hides and a hamburger button slides out an accessible mobile drawer with backdrop overlay.
-4. **Testimonial Carousel**: Pure JS slider that supports next/previous buttons, dot indicators, and swipe-ready navigation.
-5. **Interactive Modals**:
-   - **Search Modal**: Opens with autofocus on clicking the magnifying glass icon; closes on Escape key or overlay click.
-   - **Video Modal**: Embeds an accessible iframe player that automatically pauses/stops when the modal is closed.
-6. **Form Validation**: Validates name, email format (`/^[^\s@]+@[^\s@]+\.[^\s@]+$/`), and message fields with dynamic error styling and a submission toast confirmation.
+3. Project Structure
 
----
+A structure for a simple landing website is shown below.
 
-## 💻 How to Run and Test Locally
+My actual folder and file names
+construction_company/
+index.html
+css/style.css
+js/script.js
+assests/images/logo, icons, testimonials, etc...
+README.md
 
-### Option 1: Direct File Open (Zero Setup)
-Simply open `index.html` in any web browser (Google Chrome, Microsoft Edge, Firefox, Safari):
-- Double click `index.html` in File Explorer, or
-- Right click `index.html` → **Open With** → **Google Chrome**.
+4. Installation Instructions
 
-### Option 2: Using VS Code Live Server
-1. Open the folder `construction-ui` in VS Code.
-2. If installed, click **"Go Live"** in the status bar or right-click `index.html` and select **"Open with Live Server"**.
-3. The page will open at `http://127.0.0.1:5500/index.html`.
+A modern web browser, such as Google Chrome, Microsoft Edge, or Firefox.
+A code editor such as Visual Studio Code (recommended).
+Git, if you want to clone the repository or push changes to GitHub.
+Run the project locally in your computer or laptop
+1. Clone the repository, replacing the placeholder URL with your GitHub repository URL:
+bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 
-### Option 3: Using Node.js / NPX
-```bash
-# In the project directory:
-npx serve .
-# Or:
-npm run dev
-```
+2. Open the project folder:
+bash
+cd YOUR-REPOSITORY
 
-### Option 4: Using Python Built-in Server
-```bash
-python -m http.server 8080
-```
-Open [http://localhost:8080](http://localhost:8080) in your browser.
+3. Open ‘index.html’ in your browser, or open the folder in Visual Studio Code and use the Live Server extension if you have installed it.
 
----
+No package is required for my website because it was developed using HTML, CSS, and JavaScript.
 
-## 🌐 How to Deploy to Free Hosting
+5. Development Command
+This project is assumed to be a static website and therefore does not require a development server command from Node.js.
 
-### Deploying to Vercel (Recommended)
-1. Push this project to your GitHub repository.
-2. Go to [https://vercel.com](https://vercel.com) and log in with GitHub.
-3. Click **"New Project"**, select your repository, and click **"Deploy"**.
-4. The site will be live immediately with free HTTPS!
+Option A - Open the HTML file: Open ‘index.html’ directly in any browser.
 
-### Deploying to GitHub Pages
-1. Go to your repository on GitHub.
-2. Go to **Settings** → **Pages**.
-3. Under **Branch**, select `main` and root `/`, then click **Save**.
-4. Your site will be published at `https://<your-username>.github.io/<repo-name>/`.
+Option B - Visual Studio Code Live Server: Open the project folder in VS Code, right-click ‘index.html’ and select Open with Live Server.
 
----
+6. Build Command
 
-## 📋 Evaluation Checklist & Verification
+For a plain HTML, CSS, and JavaScript project, no build step is required. The files can be served directly by a static web host.
+Build command: Not required
+Output directory: Project root (the folder containing index.html.
+7. Deployment Instructions
 
-| Requirement | Reference Requirement | Status |
-| :--- | :--- | :--- |
-| **Visual Design** | Colors (`#f4c03b`, `#243344`), Roboto fonts, watermarks | ✅ Verified |
-| **Header & Topbar** | Logo, phone number, social icons, consultation button | ✅ Verified |
-| **Company Branding** | "PK's CONSTRUCTION" logo and name | ✅ Verified |
-| **Hero Section** | Accurate headline, badge, subtitle, dual CTAs | ✅ Verified |
-| **3D Flip Cards** | Flip animation on hover, front & back content | ✅ Verified |
-| **About Section** | Offset image frame, feature checklist, lead copy | ✅ Verified |
-| **Services Section** | 3 service cards, custom icons, gold callout banner | ✅ Verified |
-| **Process Steps** | 3-step numbered roadmap (01, 02, 03) with photo | ✅ Verified |
-| **Portfolio Grid** | 8 project cards with category filtering | ✅ Verified |
-| **Quote Contact Form** | Two-column layout, validation & feedback toast | ✅ Verified |
-| **Testimonial Slider** | Slider with avatar, quote, next/prev and dots | ✅ Verified |
-| **Partner Logos** | 5 partner brand logos showcase | ✅ Verified |
-| **Footer & Sub-bar** | 4-column layout, newsletter, hotline, copyright | ✅ Verified |
-| **Responsiveness** | Mobile drawer, responsive grid, zero horizontal overflow | ✅ Verified |
-| **Code Quality** | Clean semantic HTML, modular CSS, vanilla JS | ✅ Verified |
+The website can be hosted on a static web hosting service, such as GitHub Pages
+GitHub Pages
+1. Push the project files to a GitHub repository.
+2. Open the repository on GitHub.
+3. Go to Settings -> Pages.
+4. Under the build and deployment section, select the Deploy from a main branch option is available.
+5. Select the branch containing your website (commonly `main`) and the project root folder (`/`).
+6. Save the settings and wait for GitHub Pages to publish the site.
+7. Open the published URL shown in the Pages settings.
+
+8. Dependencies
+
+For a plain HTML, CSS, and JavaScript website:
+No Node.js packages are required.
+No package manager is required.
+The website needs a modern web browser.
+If the site uses external fonts, icons, images, or libraries loaded from a CDN, an internet connection may be required for those resources.
+
+If the repository contains a `package.json`, document the actual dependencies and commands listed there instead of using this section unchanged.
+
+9. Assumptions
+This is a student front-end project intended for learning and demonstration.
+The project is a static website unless the source code shows otherwise.
+‘index.html’ is the main entry point.
+HTML, CSS, and JavaScript are used; the actual files should be checked to confirm this.
+No database, authentication system, or back-end API is assumed.
+Deployment settings depend on the repository structure and hosting provider.
+
+10. Known Limitations
+Please retain only the limitations that apply to your implementation.
+If the website is static, it does not store or process data on a server by itself.
+A contact form will not send messages unless it is connected to a back-end service or a form-processing provider.
+Content and images must be updated manually unless a content-management system is added.
+Some external assets may not load without an internet connection.
+Responsive behavior and browser compatibility should be tested on different devices and browsers.
+Security features such as user authentication and database access are not included unless implemented separately.
+
+11. Future Enhancements
+Possible improvements for future versions include:
+Add more detailed project and service pages.
+Improve accessibility and mobile responsiveness.
+Connect a working contact form to a back-end or form service.
+Add a content-management system so company information can be updated easily.
+Optimize images and improve page loading performance.
+
+12. Author
+Construction Company Website
+
+13. License
+
+This project is intended for educational purposes. Add a license (for example, MIT) only if you have decided how the project may be reused and have included the corresponding license file.
